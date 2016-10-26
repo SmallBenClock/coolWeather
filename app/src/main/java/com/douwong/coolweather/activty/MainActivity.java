@@ -1,9 +1,12 @@
-package com.douwong.coolweather;
+package com.douwong.coolweather.activty;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.douwong.coolweather.R;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
