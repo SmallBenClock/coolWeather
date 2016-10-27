@@ -50,6 +50,18 @@ public class CoolWeatherDB {
         return sCoolWeatherDB;
     }
 
+
+    public void saveProvince(Province province) {
+
+        if (province != null) {
+            ContentValues values = new ContentValues();
+            values.put("province_name", province.getProvinceName());
+            values.put("province_code", province.getProvinceCode());
+            mDb.insert("Province", null, values);
+        }
+
+    }
+
     /**
      * 从数据库读取全国所有省份的信息
      */
